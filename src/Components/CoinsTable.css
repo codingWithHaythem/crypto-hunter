@@ -1,0 +1,28 @@
+
+.rows{
+    background-color: #16171a;
+    font-family: "Montserrat";
+    cursor: pointer
+}
+.rows:hover{
+    background-color: #121111;
+}
+.pag{
+    text-align: center;
+    width:100%;
+    padding: 15px;
+    background-color: #919191 ;
+    display: flex;
+    justify-content: center;
+}
+
+.textField{
+     margin-bottom: 50px;
+      width: 100%;
+    background-color: #c6bfbf;
+}
+
+.MuiFormLabel-root{
+    color: red
+   
+}

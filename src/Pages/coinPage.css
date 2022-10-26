@@ -1,0 +1,113 @@
+.container{
+    display: flex;
+}
+.sidebar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 25px;
+    border-right: 2px solid white;
+    width: 30%;
+}
+.name{
+    font-weight: bold;
+    margin-bottom:20px;
+    font-family: "Montserrat";
+}
+.descrip{
+    width: 100%;
+    padding: 25px;
+    padding-top: 0;
+    padding-bottom: 0;
+    font-family: "Montserrat";
+    text-align: justify;
+    line-height: 1.6;
+}
+
+.marketData{
+    align-self: flex-start;
+    padding: 25px;
+    width: 100%;
+    line-height: 2;
+}
+
+@media (max-width:1112px) {
+    .container{
+        flex-direction: column;
+    }
+    .sidebar{
+        flex-direction: column;
+        width: 80%;
+        text-align: center;
+        border: none;
+        margin: 0 auto;
+    }
+    .marketData{
+        display: flex;
+        justify-content: space-between;
+    }
+    
+}
+
+@media (max-width:980px) {
+    .marketData{
+        flex-direction: column;
+    }
+}
+
+@media (max-width:550px) {
+    .sidebar{
+        width: 100%;
+        text-align: left;
+    }
+    .chartContainer{
+        width: 100%;
+        padding: 20px;
+        margin: 0;
+        padding-top: 0;
+    }
+}
+.chartContainer{
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+    padding: 40px;
+    
+}
+
+.buttonContainer{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+
+.button{
+    width: 22%;
+}
+.button button{
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid gold;
+    cursor: pointer;
+    background:none;
+    color: white;
+    font-size: 1em;
+    font-family: "Montserrat";
+    font-weight: 500;
+}
+
+.button button:focus{
+    background-color: gold;
+    color:black;
+    font-weight: 700;
+}
+
+.button button:hover{
+    background-color: gold;
+    color: black;
+}
